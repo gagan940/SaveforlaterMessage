@@ -1,0 +1,24 @@
+<template>
+   
+    <template if:false={auto}>
+      <template if:true={hasResult}>
+        <div  style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 0;padding: 0;display: flex;justify-content: center;align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;">
+           <div class="success-banner">
+            <span class="icon-container">✓</span>
+            <div class="message-content">
+                <b>Success!</b>
+                <p>Your action was completed successfully.</p>
+                <div class="additional-content">
+                    <p>Thank you for Drafting the Application.</p>
+                    <p>You can resume the application from the record page</p>
+                </div>
+                <lightning-button variant="success" label="Close" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+            </div>
+        </div>
+        </div>
+      </template>
+    </template>
+  </template>
